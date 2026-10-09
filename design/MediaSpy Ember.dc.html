@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;-webkit-font-smoothing:antialiased;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+  ::-webkit-scrollbar{width:9px;height:9px}
+  ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:5px}
+  ::-webkit-scrollbar-track{background:transparent}
+</style>
+</helmet>
+
+<section data-label="MediaSpy Ember" style="padding:64px 72px 130px;min-width:2160px;background:#2a2a30;background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);background-size:26px 26px;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;color:#e9e9ee">
+
+  <div style="max-width:1000px;margin-bottom:52px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2.5px;color:#8f8f99;text-transform:uppercase">MediaSpy · Ember</span>
+      <span style="display:flex;gap:5px"><span style="width:13px;height:13px;border-radius:50%;background:#F2A93B"></span><span style="width:13px;height:13px;border-radius:50%;background:#F26D5B"></span><span style="width:13px;height:13px;border-radius:50%;background:#B583FF"></span></span>
+    </div>
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:38px;font-weight:600;margin:0 0 14px;letter-spacing:-.5px;line-height:1.05">The chosen direction, refined</h1>
+    <p style="font-size:15px;line-height:1.6;color:#b6b6c0;margin:0;max-width:760px">Purple replaces magenta, the toolbar is stripped to one view, and the right-click popup is gone — Finder opens straight into the main window. <strong style="color:#e9e9ee;font-weight:600">General info now sits at the top.</strong> Four screens: <strong style="color:#e9e9ee;font-weight:600">2a</strong> single horizontal video (no sidebar), <strong style="color:#e9e9ee;font-weight:600">2b</strong> multiple files (sidebar appears), <strong style="color:#e9e9ee;font-weight:600">2c</strong> an audio file, <strong style="color:#e9e9ee;font-weight:600">2d</strong> a file with 10 subtitle streams.</p>
+  </div>
+
+  <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
+
+    <!-- ==================== 2a — SINGLE HORIZONTAL VIDEO (no sidebar) ==================== -->
+    <div id="2a" style="width:960px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#17120f;background:#F2A93B;padding:4px 11px;border-radius:7px">2a</span>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;margin:0;letter-spacing:-.3px">Single file · horizontal video</h2>
+      </div>
+      <p style="font-size:13px;color:#9a9aa4;margin:0 0 20px;line-height:1.5;max-width:560px">The common case — open one file, no sidebar. 16:9 preview, General at the top, then streams.</p>
+
+      <div style="width:960px;border-radius:14px;overflow:hidden;background:#17120f;border:1px solid rgba(245,235,225,.09);box-shadow:0 40px 90px -24px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.5)">
+        <div style="height:44px;display:flex;align-items:center;padding:0 16px;background:linear-gradient(#241d19,#1c1613);border-bottom:1px solid rgba(245,235,225,.08)">
+          <div style="display:flex;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FF5F57"></span><span style="width:12px;height:12px;border-radius:50%;background:#FEBC2E"></span><span style="width:12px;height:12px;border-radius:50%;background:#28C840"></span></div>
+          <div style="flex:1;display:flex;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:520px">Grade_ProRes_Master_v4.mov</span></div>
+          <div style="width:54px;display:flex;justify-content:flex-end"><span style="width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;font-size:18px;color:#a08c7d;line-height:1">+</span></div>
+        </div>
+
+        <div style="padding:26px 30px 32px">
+          <!-- header -->
+          <div style="display:flex;gap:22px;margin-bottom:24px">
+            <div style="width:212px;height:119px;flex-shrink:0;border-radius:10px;overflow:hidden;position:relative;background:repeating-linear-gradient(45deg,#2a211b 0 9px,#241d18 9px 18px);border:1px solid rgba(245,235,225,.08)">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:15px solid rgba(245,237,230,.85);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px"></span></div>
+              <div style="position:absolute;left:8px;top:8px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#c9bcb0;background:rgba(0,0,0,.5);padding:2px 6px;border-radius:4px">16:9</div>
+              <div style="position:absolute;left:0;right:0;bottom:0;padding:7px 8px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#e9ddd2;background:linear-gradient(transparent,rgba(0,0,0,.72))">3840×2160 · UHD</div>
+            </div>
+            <div style="min-width:0;flex:1;padding-top:3px">
+              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:600;color:#f5ede6;margin:0 0 6px;line-height:1.15;letter-spacing:-.3px">Grade_ProRes_Master_v4</h3>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:16px">/Volumes/Media 2TB/Projects/Ep207/Grade_ProRes_Master_v4.mov</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:#F2A93B;background:rgba(242,169,59,.14);border:1px solid rgba(242,169,59,.28);padding:5px 10px;border-radius:7px">QuickTime · MOV</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">3.84 GiB</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">2 min 12 s</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">248 Mb/s</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">1 video · 1 audio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- GENERAL (now at top) -->
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">GENERAL</div>
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:17px 18px;margin-bottom:22px">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:15px 18px">
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">FORMAT</div><div style="font-size:13px;color:#eaded2">QuickTime</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">FILE SIZE</div><div style="font-size:13px;color:#eaded2">3.84 GiB</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">DURATION</div><div style="font-size:13px;color:#eaded2">2 min 12 s</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">OVERALL RATE</div><div style="font-size:13px;color:#eaded2">248 Mb/s</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">WRITING APP</div><div style="font-size:13px;color:#eaded2">Media Composer 24.12.3</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">ENCODED</div><div style="font-size:13px;color:#eaded2">2026-06-14</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">COLOR</div><div style="font-size:13px;color:#eaded2">BT.709</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">STREAMS</div><div style="font-size:13px;color:#eaded2">2 · V+A</div></div>
+            </div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">STREAMS</div>
+
+          <!-- video -->
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:17px 18px;margin-bottom:12px">
+            <div style="display:flex;align-items:center;gap:11px;margin-bottom:15px;flex-wrap:wrap">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#F26D5B;background:rgba(242,109,91,.15);padding:4px 9px;border-radius:6px">VIDEO</span>
+              <span style="font-size:14px;font-weight:600;color:#f5ede6">Apple ProRes 422 HQ</span>
+              <span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">3840×2160 · 16:9 · 23.976 fps</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:15px 18px;margin-bottom:16px">
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BIT RATE</div><div style="font-size:13px;color:#eaded2">245 Mb/s</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">CHROMA</div><div style="font-size:13px;color:#eaded2">4:2:2 · 10-bit</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">SCAN</div><div style="font-size:13px;color:#eaded2">Progressive</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">COLOR</div><div style="font-size:13px;color:#eaded2">BT.709</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.07);overflow:hidden"><div style="width:94%;height:100%;border-radius:3px;background:linear-gradient(90deg,#F2A93B,#F26D5B)"></div></div>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#F2A93B;white-space:nowrap">MASTERING QUALITY</span>
+            </div>
+          </div>
+
+          <!-- audio -->
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:17px 18px">
+            <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px;flex-wrap:wrap">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#B583FF;background:rgba(181,131,255,.16);padding:4px 9px;border-radius:6px">AUDIO</span>
+              <span style="font-size:14px;font-weight:600;color:#f5ede6">PCM</span>
+              <span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">48.0 kHz · 24-bit · 2 ch</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:2px;height:40px;margin-bottom:15px;padding:0 2px">
+              <sc-for list="{{ bars }}" as="b" hint-placeholder-count="60"><div style="flex:1;min-width:0;background:#B583FF;opacity:.8;border-radius:2px;height:{{ b }}%"></div></sc-for>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:15px 18px">
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BIT RATE</div><div style="font-size:13px;color:#eaded2">2 304 kb/s</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">SAMPLING</div><div style="font-size:13px;color:#eaded2">48.0 kHz</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">CHANNELS</div><div style="font-size:13px;color:#eaded2">2 · Stereo</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">ENDIAN</div><div style="font-size:13px;color:#eaded2">Little / Signed</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 2b — MULTIPLE FILES (sidebar) ==================== -->
+    <div id="2b" style="width:960px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#17120f;background:#F2A93B;padding:4px 11px;border-radius:7px">2b</span>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;margin:0;letter-spacing:-.3px">Multiple files · sidebar appears</h2>
+      </div>
+      <p style="font-size:13px;color:#9a9aa4;margin:0 0 20px;line-height:1.5;max-width:560px">Drop several files and the sidebar slides in. Selected here is a 9:16 vertical clip — the preview adapts to any aspect.</p>
+
+      <div style="width:960px;border-radius:14px;overflow:hidden;background:#17120f;border:1px solid rgba(245,235,225,.09);box-shadow:0 40px 90px -24px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.5)">
+        <div style="height:44px;display:flex;align-items:center;padding:0 16px;background:linear-gradient(#241d19,#1c1613);border-bottom:1px solid rgba(245,235,225,.08)">
+          <div style="display:flex;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FF5F57"></span><span style="width:12px;height:12px;border-radius:50%;background:#FEBC2E"></span><span style="width:12px;height:12px;border-radius:50%;background:#28C840"></span></div>
+          <div style="flex:1;display:flex;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:520px">House of the Dragon S3 Teaser…mp4</span></div>
+          <div style="width:54px;display:flex;justify-content:flex-end"><span style="width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;font-size:18px;color:#a08c7d;line-height:1">+</span></div>
+        </div>
+
+        <div style="display:flex;height:658px">
+          <!-- sidebar -->
+          <div style="width:236px;flex-shrink:0;background:#1e1815;border-right:1px solid rgba(245,235,225,.07);display:flex;flex-direction:column">
+            <div style="padding:16px 16px 12px;display:flex;align-items:center;gap:10px">
+              <div style="width:24px;height:24px;border-radius:7px;background:linear-gradient(135deg,#F2A93B,#B583FF);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#17120f">M</div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:#f5ede6;letter-spacing:.2px">MediaSpy</div>
+            </div>
+            <div style="padding:4px 16px 10px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:1px;color:#857468">5 FILES · 1 SELECTED</div>
+            <div style="padding:0 8px;display:flex;flex-direction:column;gap:2px">
+              <div style="display:flex;align-items:center;gap:10px;padding:9px;border-radius:9px;background:rgba(242,169,59,.13);position:relative">
+                <span style="position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:2px;background:#F2A93B"></span>
+                <span style="width:26px;height:26px;flex-shrink:0;border-radius:6px;background:rgba(242,109,91,.18);display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:7px solid #F26D5B;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px"></span></span>
+                <div style="min-width:0;flex:1"><div style="font-size:12.5px;color:#f5ede6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500">House of the Dragon S3…mp4</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#a08c7d;margin-top:1px">MP4 · 157 MB</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:9px;border-radius:9px">
+                <span style="width:26px;height:26px;flex-shrink:0;border-radius:6px;background:rgba(181,131,255,.16);display:flex;align-items:center;justify-content:center"><span style="width:10px;height:10px;border:1.8px solid #B583FF;border-radius:50%"></span></span>
+                <div style="min-width:0;flex:1"><div style="font-size:12.5px;color:#c9bcb0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Vermathor breathing 207.wav</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#857468;margin-top:1px">WAV · 40 MB</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:9px;border-radius:9px">
+                <span style="width:26px;height:26px;flex-shrink:0;border-radius:6px;background:rgba(242,109,91,.13);display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:7px solid #b78a6f;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px"></span></span>
+                <div style="min-width:0;flex:1"><div style="font-size:12.5px;color:#c9bcb0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Grade_ProRes_Master_v4.mov</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#857468;margin-top:1px">MOV · 3.8 GB</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:9px;border-radius:9px">
+                <span style="width:26px;height:26px;flex-shrink:0;border-radius:6px;background:rgba(181,131,255,.1);display:flex;align-items:center;justify-content:center"><span style="width:10px;height:10px;border:1.8px solid #b78a6f;border-radius:50%"></span></span>
+                <div style="min-width:0;flex:1"><div style="font-size:12.5px;color:#c9bcb0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Kickdrum_layer_bounce.aiff</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#857468;margin-top:1px">AIFF · 12 MB</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:9px;border-radius:9px">
+                <span style="width:26px;height:26px;flex-shrink:0;border-radius:6px;background:rgba(242,109,91,.13);display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:7px solid #b78a6f;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px"></span></span>
+                <div style="min-width:0;flex:1"><div style="font-size:12.5px;color:#c9bcb0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Feature_Master_UHD_HDR10.mkv</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#857468;margin-top:1px">MKV · 68 GB</div></div>
+              </div>
+            </div>
+            <div style="flex:1"></div>
+            <div style="margin:12px;padding:14px;border-radius:10px;border:1.5px dashed rgba(245,235,225,.14);text-align:center;font-size:11.5px;color:#857468;line-height:1.4">Drop files to add<br><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#6a5b50">or ⌘O to open</span></div>
+          </div>
+
+          <!-- content -->
+          <div style="flex:1;overflow:auto;padding:24px 26px 30px;min-width:0">
+            <div style="display:flex;gap:20px;margin-bottom:22px">
+              <div style="width:82px;height:146px;flex-shrink:0;border-radius:10px;overflow:hidden;position:relative;background:repeating-linear-gradient(45deg,#2a211b 0 9px,#241d18 9px 18px);border:1px solid rgba(245,235,225,.08)">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:13px solid rgba(245,237,230,.85);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:3px"></span></div>
+                <div style="position:absolute;left:6px;top:6px;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#c9bcb0;background:rgba(0,0,0,.5);padding:2px 5px;border-radius:4px">9:16</div>
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:6px;font-family:'IBM Plex Mono',monospace;font-size:8.5px;color:#e9ddd2;background:linear-gradient(transparent,rgba(0,0,0,.7))">1080×1920</div>
+              </div>
+              <div style="min-width:0;flex:1;padding-top:2px">
+                <h3 style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:600;color:#f5ede6;margin:0 0 5px;line-height:1.15;letter-spacing:-.3px">House of the Dragon S3 Teaser</h3>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:14px">/Volumes/Media 2TB/Downloads/…_1080x1920_TIKTOK_TH_JUNE.mp4</div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px">
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:#F2A93B;background:rgba(242,169,59,.14);border:1px solid rgba(242,169,59,.28);padding:5px 10px;border-radius:7px">MPEG-4</span>
+                  <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">157 MiB</span>
+                  <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">1 min 7 s</span>
+                  <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">1 video · 1 audio</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">GENERAL</div>
+            <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:15px 18px;margin-bottom:20px">
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 18px">
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">FORMAT</div><div style="font-size:13px;color:#eaded2">MPEG-4</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">OVERALL RATE</div><div style="font-size:13px;color:#eaded2">19.7 Mb/s</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">ENCODED</div><div style="font-size:13px;color:#eaded2">2026-02-19</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BRAND</div><div style="font-size:13px;color:#eaded2">mp42 · isom</div></div>
+              </div>
+            </div>
+
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">STREAMS</div>
+
+            <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:16px 18px;margin-bottom:12px">
+              <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px;flex-wrap:wrap">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#F26D5B;background:rgba(242,109,91,.15);padding:4px 9px;border-radius:6px">VIDEO</span>
+                <span style="font-size:14px;font-weight:600;color:#f5ede6">H.264 · AVC</span>
+                <span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">1080×1920 · 9:16 · 25 fps</span>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 18px;margin-bottom:15px">
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BIT RATE</div><div style="font-size:13px;color:#eaded2">19.4 Mb/s</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">PROFILE</div><div style="font-size:13px;color:#eaded2">Main@L4.1</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">CHROMA</div><div style="font-size:13px;color:#eaded2">4:2:0 · 8-bit</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">ENCODING</div><div style="font-size:13px;color:#eaded2">CABAC · 4 ref</div></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <div style="flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.07);overflow:hidden"><div style="width:82%;height:100%;border-radius:3px;background:linear-gradient(90deg,#F2A93B,#F26D5B)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#F2A93B;white-space:nowrap">HIGH BITRATE</span>
+              </div>
+            </div>
+
+            <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:16px 18px">
+              <div style="display:flex;align-items:center;gap:11px;margin-bottom:13px;flex-wrap:wrap">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#B583FF;background:rgba(181,131,255,.16);padding:4px 9px;border-radius:6px">AUDIO</span>
+                <span style="font-size:14px;font-weight:600;color:#f5ede6">AAC LC</span>
+                <span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">48.0 kHz · 2 ch · 317 kb/s</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:2px;height:36px;margin-bottom:14px;padding:0 2px">
+                <sc-for list="{{ bars }}" as="b" hint-placeholder-count="60"><div style="flex:1;min-width:0;background:#B583FF;opacity:.78;border-radius:2px;height:{{ b }}%"></div></sc-for>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 18px">
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BIT RATE</div><div style="font-size:13px;color:#eaded2">317 kb/s</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">SAMPLING</div><div style="font-size:13px;color:#eaded2">48.0 kHz</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">CHANNELS</div><div style="font-size:13px;color:#eaded2">2 · Stereo</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">LANGUAGE</div><div style="font-size:13px;color:#eaded2">English</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 2c — AUDIO FILE ==================== -->
+    <div id="2c" style="width:960px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#17120f;background:#F2A93B;padding:4px 11px;border-radius:7px">2c</span>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;margin:0;letter-spacing:-.3px">Audio file · waveform hero</h2>
+      </div>
+      <p style="font-size:13px;color:#9a9aa4;margin:0 0 20px;line-height:1.5;max-width:560px">No video, so the waveform takes the header. Channel meters give producers a quick read on levels.</p>
+
+      <div style="width:960px;border-radius:14px;overflow:hidden;background:#17120f;border:1px solid rgba(245,235,225,.09);box-shadow:0 40px 90px -24px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.5)">
+        <div style="height:44px;display:flex;align-items:center;padding:0 16px;background:linear-gradient(#241d19,#1c1613);border-bottom:1px solid rgba(245,235,225,.08)">
+          <div style="display:flex;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FF5F57"></span><span style="width:12px;height:12px;border-radius:50%;background:#FEBC2E"></span><span style="width:12px;height:12px;border-radius:50%;background:#28C840"></span></div>
+          <div style="flex:1;display:flex;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:520px">Vermathor breathing episode 207.wav</span></div>
+          <div style="width:54px;display:flex;justify-content:flex-end"><span style="width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;font-size:18px;color:#a08c7d;line-height:1">+</span></div>
+        </div>
+
+        <div style="padding:26px 30px 32px">
+          <!-- waveform hero -->
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:16px 18px;margin-bottom:22px">
+            <div style="display:flex;align-items:center;gap:2px;height:104px;margin-bottom:12px">
+              <sc-for list="{{ bars }}" as="b" hint-placeholder-count="60"><div style="flex:1;min-width:0;background:#F2A93B;opacity:.85;border-radius:2px;height:{{ b }}%"></div></sc-for>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#857468">
+              <span>00:00</span><span>01:12</span><span>02:25</span>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:22px;margin-bottom:24px;align-items:flex-start">
+            <div style="min-width:0;flex:1">
+              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:600;color:#f5ede6;margin:0 0 6px;line-height:1.15;letter-spacing:-.3px">Vermathor breathing episode 207</h3>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:14px">/Volumes/Media 2TB/Downloads/Vermathor breathing episode 207.wav</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:#F2A93B;background:rgba(242,169,59,.14);border:1px solid rgba(242,169,59,.28);padding:5px 10px;border-radius:7px">WAV · PCM</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">40.0 MiB</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">2 min 25 s</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">2 304 kb/s CBR</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">GENERAL</div>
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:17px 18px;margin-bottom:22px">
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:15px 18px">
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">FORMAT</div><div style="font-size:13px;color:#eaded2">Wave (RIFF)</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">RATE MODE</div><div style="font-size:13px;color:#eaded2">Constant</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">PRODUCER</div><div style="font-size:13px;color:#eaded2">Media Composer 24.12.3</div></div>
+              <div style="grid-column:1 / -1"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">DESCRIPTION</div><div style="font-size:13px;color:#eaded2;font-family:'IBM Plex Mono',monospace">vFRAMERATE=23.976 / vSPEED=23.976 / vNOTE=BreathPass_Final</div></div>
+            </div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">STREAMS</div>
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:17px 18px">
+            <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px;flex-wrap:wrap">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#B583FF;background:rgba(181,131,255,.16);padding:4px 9px;border-radius:6px">AUDIO</span>
+              <span style="font-size:14px;font-weight:600;color:#f5ede6">PCM (Little / Signed)</span>
+              <span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">48.0 kHz · 24-bit · 2 ch</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:15px 18px;margin-bottom:18px">
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BIT RATE</div><div style="font-size:13px;color:#eaded2">2 304 kb/s</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">SAMPLING</div><div style="font-size:13px;color:#eaded2">48.0 kHz</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">BIT DEPTH</div><div style="font-size:13px;color:#eaded2">24 bits</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">CHANNELS</div><div style="font-size:13px;color:#eaded2">2 · Stereo</div></div>
+            </div>
+            <!-- channel meters -->
+            <div style="display:flex;flex-direction:column;gap:9px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9a8878;width:14px">L</span>
+                <div style="flex:1;height:8px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden"><div style="width:74%;height:100%;border-radius:4px;background:linear-gradient(90deg,#F2A93B,#F26D5B 82%,#B583FF)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#857468;width:52px;text-align:right">−4.2 dB</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9a8878;width:14px">R</span>
+                <div style="flex:1;height:8px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden"><div style="width:68%;height:100%;border-radius:4px;background:linear-gradient(90deg,#F2A93B,#F26D5B 82%,#B583FF)"></div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#857468;width:52px;text-align:right">−5.8 dB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 2d — SUBTITLES (10 text streams) ==================== -->
+    <div id="2d" style="width:960px;flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#17120f;background:#F2A93B;padding:4px 11px;border-radius:7px">2d</span>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;margin:0;letter-spacing:-.3px">Many streams · 10 subtitles</h2>
+      </div>
+      <p style="font-size:13px;color:#9a9aa4;margin:0 0 20px;line-height:1.5;max-width:560px">A movie remux with two audio and ten subtitle tracks. Long lists collapse into a dense, scannable table — one row per stream.</p>
+
+      <div style="width:960px;border-radius:14px;overflow:hidden;background:#17120f;border:1px solid rgba(245,235,225,.09);box-shadow:0 40px 90px -24px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.5)">
+        <div style="height:44px;display:flex;align-items:center;padding:0 16px;background:linear-gradient(#241d19,#1c1613);border-bottom:1px solid rgba(245,235,225,.08)">
+          <div style="display:flex;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:#FF5F57"></span><span style="width:12px;height:12px;border-radius:50%;background:#FEBC2E"></span><span style="width:12px;height:12px;border-radius:50%;background:#28C840"></span></div>
+          <div style="flex:1;display:flex;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:520px">Feature_Master_UHD_HDR10.mkv</span></div>
+          <div style="width:54px;display:flex;justify-content:flex-end"><span style="width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;font-size:18px;color:#a08c7d;line-height:1">+</span></div>
+        </div>
+
+        <div style="padding:26px 30px 32px">
+          <!-- header -->
+          <div style="display:flex;gap:22px;margin-bottom:24px">
+            <div style="width:212px;height:119px;flex-shrink:0;border-radius:10px;overflow:hidden;position:relative;background:repeating-linear-gradient(45deg,#2a211b 0 9px,#241d18 9px 18px);border:1px solid rgba(245,235,225,.08)">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:15px solid rgba(245,237,230,.85);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px"></span></div>
+              <div style="position:absolute;left:8px;top:8px;display:flex;gap:5px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#17120f;background:#F2A93B;padding:2px 6px;border-radius:4px;font-weight:600">HDR10</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#c9bcb0;background:rgba(0,0,0,.5);padding:2px 6px;border-radius:4px">16:9</span></div>
+              <div style="position:absolute;left:0;right:0;bottom:0;padding:7px 8px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#e9ddd2;background:linear-gradient(transparent,rgba(0,0,0,.72))">3840×2160 · UHD</div>
+            </div>
+            <div style="min-width:0;flex:1;padding-top:3px">
+              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:600;color:#f5ede6;margin:0 0 6px;line-height:1.15;letter-spacing:-.3px">Feature_Master_UHD_HDR10</h3>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9a8878;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:16px">/Volumes/Media 2TB/Films/Feature_Master_UHD_HDR10.mkv</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;color:#F2A93B;background:rgba(242,169,59,.14);border:1px solid rgba(242,169,59,.28);padding:5px 10px;border-radius:7px">Matroska · MKV</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">68.4 GiB</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">2 h 46 min</span>
+                <span style="font-size:12px;color:#c9bcb0;background:rgba(255,255,255,.045);padding:5px 11px;border-radius:7px">1 video · 2 audio · 10 text</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">GENERAL</div>
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:15px 18px;margin-bottom:20px">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 18px">
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">FORMAT</div><div style="font-size:13px;color:#eaded2">Matroska</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">OVERALL RATE</div><div style="font-size:13px;color:#eaded2">54.8 Mb/s</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">WRITING APP</div><div style="font-size:13px;color:#eaded2">mkvmerge 84.0</div></div>
+              <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.8px;color:#857468;margin-bottom:3px">STREAMS</div><div style="font-size:13px;color:#eaded2">13 total</div></div>
+            </div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#857468;margin-bottom:11px">STREAMS</div>
+
+          <!-- video -->
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:15px 18px;margin-bottom:12px">
+            <div style="display:flex;align-items:center;gap:11px;flex-wrap:wrap">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#F26D5B;background:rgba(242,109,91,.15);padding:4px 9px;border-radius:6px">VIDEO</span>
+              <span style="font-size:14px;font-weight:600;color:#f5ede6">H.265 · HEVC</span>
+              <span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">3840×2160 · Main 10 · HDR10 · 23.976 fps · 48.0 Mb/s</span>
+            </div>
+          </div>
+
+          <!-- audio (2 tracks, dense list) -->
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:15px 18px 8px;margin-bottom:12px">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#B583FF;background:rgba(181,131,255,.16);padding:4px 9px;border-radius:6px">AUDIO</span><span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">2 streams</span></div>
+            <div style="display:grid;grid-template-columns:22px 78px 150px 1fr auto;gap:0 12px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.8px;color:#6a5b50;padding:0 4px 7px;border-bottom:1px solid rgba(245,235,225,.06)">
+              <span>#</span><span>LANG</span><span>CODEC</span><span>TITLE</span><span>FLAGS</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 78px 150px 1fr auto;gap:0 12px;align-items:center;padding:9px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">1</span><span style="font-size:12.5px;color:#eaded2">English</span><span style="font-size:12.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">TrueHD Atmos</span><span style="font-size:12.5px;color:#9a8878">Surround 7.1</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;color:#F2A93B;background:rgba(242,169,59,.14);padding:2px 7px;border-radius:5px">DEFAULT</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 78px 150px 1fr auto;gap:0 12px;align-items:center;padding:9px 4px">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">2</span><span style="font-size:12.5px;color:#eaded2">English</span><span style="font-size:12.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">AC-3</span><span style="font-size:12.5px;color:#9a8878">Director commentary</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+          </div>
+
+          <!-- text (10 streams) -->
+          <div style="background:#1e1815;border:1px solid rgba(245,235,225,.07);border-radius:12px;padding:15px 18px 8px">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:1px;color:#F2A93B;background:rgba(242,169,59,.16);padding:4px 9px;border-radius:6px">TEXT</span><span style="font-size:12.5px;color:#9a8878;font-family:'IBM Plex Mono',monospace">10 subtitle streams</span></div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.8px;color:#6a5b50;padding:0 4px 7px;border-bottom:1px solid rgba(245,235,225,.06)">
+              <span>#</span><span>LANGUAGE</span><span>FORMAT</span><span>TITLE</span><span>FLAGS</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">1</span><span style="font-size:12.5px;color:#eaded2">English</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Full</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;color:#F2A93B;background:rgba(242,169,59,.14);padding:2px 7px;border-radius:5px">DEFAULT</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">2</span><span style="font-size:12.5px;color:#eaded2">English</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">SRT</span><span style="font-size:12.5px;color:#9a8878">Signs &amp; songs</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;color:#F26D5B;background:rgba(242,109,91,.15);padding:2px 7px;border-radius:5px">FORCED</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">3</span><span style="font-size:12.5px;color:#eaded2">English</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Hearing impaired</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;color:#B583FF;background:rgba(181,131,255,.16);padding:2px 7px;border-radius:5px">SDH</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">4</span><span style="font-size:12.5px;color:#eaded2">Spanish</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Español (Latino)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">5</span><span style="font-size:12.5px;color:#eaded2">Spanish</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Español (España)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">6</span><span style="font-size:12.5px;color:#eaded2">French</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Français</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">7</span><span style="font-size:12.5px;color:#eaded2">German</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Deutsch</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">8</span><span style="font-size:12.5px;color:#eaded2">Italian</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">Italiano</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px;border-bottom:1px solid rgba(245,235,225,.04)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">9</span><span style="font-size:12.5px;color:#eaded2">Japanese</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">日本語</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+            <div style="display:grid;grid-template-columns:22px 100px 60px 1fr auto;gap:0 12px;align-items:center;padding:8px 4px">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#857468">10</span><span style="font-size:12.5px;color:#eaded2">Korean</span><span style="font-size:11.5px;color:#c9bcb0;font-family:'IBM Plex Mono',monospace">PGS</span><span style="font-size:12.5px;color:#9a8878">한국어</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#857468">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const bars = Array.from({ length: 60 }, (_, i) => {
+      const v = 18
+        + Math.abs(Math.sin(i * 0.55)) * 42
+        + Math.abs(Math.sin(i * 0.19 + 1.3)) * 30
+        + ((i * 37) % 17) / 17 * 14;
+      return Math.max(9, Math.min(100, Math.round(v)));
+    });
+    return { bars };
+  }
+}
+</script>
+</body>
+</html>

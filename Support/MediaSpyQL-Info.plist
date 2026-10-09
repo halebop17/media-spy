@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>MediaSpyQL</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>XPC!</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.quicklook.preview</string>
+        <key>NSExtensionPrincipalClass</key>
+        <string>$(PRODUCT_MODULE_NAME).PreviewViewController</string>
+        <key>NSExtensionAttributes</key>
+        <dict>
+            <!-- Concrete leaf UTIs — a parent like public.movie alone won't match.
+                 mp4/mov/wav are often shadowed by macOS's native AV preview;
+                 mkv & co. reliably use this extension. -->
+            <key>QLSupportedContentTypes</key>
+            <array>
+                <string>org.matroska.mkv</string>
+                <string>public.mpeg-4</string>
+                <string>com.apple.quicktime-movie</string>
+                <string>public.avi</string>
+                <string>public.mpeg-2-transport-stream</string>
+                <string>public.mp3</string>
+                <string>com.microsoft.waveform-audio</string>
+                <string>com.apple.m4a-audio</string>
+                <string>public.aifc-audio</string>
+                <string>public.aiff-audio</string>
+                <string>org.xiph.flac</string>
+                <string>public.movie</string>
+                <string>public.audio</string>
+            </array>
+            <key>QLSupportsSearchableItems</key>
+            <false/>
+        </dict>
+    </dict>
+</dict>
+</plist>

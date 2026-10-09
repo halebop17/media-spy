@@ -1,0 +1,5 @@
+module CMediaInfo [system] {
+    header "shim.h"
+    link "mediainfo"
+    export *
+}
