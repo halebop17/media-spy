@@ -12,9 +12,9 @@ read.
 
 Drop a file in and you get a clear summary first. Every technical detail is there too when you want it.
 
-![MediaSpy showing a video file](docs/images/video.png)
+![MediaSpy showing a video file](screenshots/video.png)
 
-![MediaSpy showing an audio file with waveform and level meters](docs/images/audio.png)
+![MediaSpy showing an audio file with waveform and level meters](screenshots/audio.png)
 
 ## What it shows you
 
