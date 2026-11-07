@@ -51,11 +51,15 @@ and many more.
 
 ## Download
 
-Get the latest version from the [Releases](../../releases/latest) page. Open the disk image and drag
-MediaSpy into your Applications folder.
+MediaSpy is free. Get it from [monokern.app](https://monokern.app/media-spy) or
+[Payhip](https://payhip.com/b/SEaHU), or from the [Releases](../../releases/latest) page here. Open
+the disk image and drag MediaSpy into your Applications folder.
 
 MediaSpy needs **macOS 14 Sonoma or later** and a **Mac with Apple silicon**. It is signed and
 notarized by Apple.
+
+This repository is the public record of the free version, with its releases and notices. The source
+code isn't kept here.
 
 ## Credits
 
